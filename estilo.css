@@ -1,6 +1,50 @@
-.letras{
-    font-style: italic;
+.h2anim {
+    animation-duration: 20s;
+    animation-name: aparecer;
+    animation-delay: 1s  ;
+    
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+
+  }
+
+.letras {
+  font-style: italic;
 }
-.letras__footer{
-    font-size: larger;
+/*transicion en el footer*/
+.letras__footer p {
+  font-size: larger;
+  height: 36px;
+  transition: height 1s;
+}
+
+.letras__footer p:hover{
+    height: 40px;
+}
+
+
+.historiayfoto {
+  font-family: cursive;
+  width: 100%;
+}
+.imagen__historia {
+  float: left;
+  display: inline;
+  margin: 20px;
+
+  animation-duration: 20s;
+  animation-name: aparecer;
+  animation-delay: 1s  ;
+}
+.texto__historia {
+  text-justify: auto;
+  padding: 30px;
+  
+  
 }
